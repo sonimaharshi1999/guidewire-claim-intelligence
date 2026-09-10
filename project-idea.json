@@ -1,0 +1,12 @@
+{
+  "project_name": "guidewire-claim-intelligence",
+  "title": "Guidewire Claim Intelligence - ML-Powered Claim Triage & Fraud Detection",
+  "category": "machine-learning",
+  "difficulty": "advanced",
+  "description": "ML-powered claim intelligence engine for P&C insurance. Predicts claim severity, recommends adjuster assignment, estimates reserves, and flags fraud risk using anomaly detection. Trained on synthetic ClaimCenter data covering Auto, Homeowners, Workers Comp, and more.",
+  "tech_stack": ["scikit-learn", "pandas", "numpy", "fastapi", "uvicorn", "pydantic", "matplotlib", "pytest"],
+  "features": ["Claim severity prediction (1-5 scale)", "Adjuster recommendation by expertise", "Reserve estimation", "Fraud risk scoring with Isolation Forest", "FastAPI REST API", "Feature importance explanations"],
+  "test_status": "PASSED",
+  "sample_input": {"description": "Claim attributes", "example": "curl -X POST /score -d '{\"lob\": \"PersonalAuto\", \"loss_amount\": 15000}'"},
+  "sample_output": {"description": "Claim intelligence scores", "example": "{\"severity\": 3, \"fraud_score\": 12, \"adjuster\": \"Auto Specialist\", \"reserve\": 18500}"}
+}

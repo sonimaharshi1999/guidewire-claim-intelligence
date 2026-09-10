@@ -1,0 +1,96 @@
+======================================================================
+  Guidewire Claim Intelligence - ML-Powered Claim Triage & Fraud Detection
+======================================================================
+
+Author: Maharshi Soni
+Category: machine-learning
+Difficulty: advanced
+
+----------------------------------------------------------------------
+DESCRIPTION
+----------------------------------------------------------------------
+ML-powered claim intelligence engine for P&C insurance. Predicts claim severity, recommends adjuster assignment, estimates reserves, and flags fraud risk using anomaly detection. Trained on synthetic ClaimCenter data covering Auto, Homeowners, Workers Comp, and more.
+
+----------------------------------------------------------------------
+TECH STACK
+----------------------------------------------------------------------
+  - scikit-learn
+  - pandas
+  - numpy
+  - fastapi
+  - uvicorn
+  - pydantic
+  - matplotlib
+  - pytest
+
+----------------------------------------------------------------------
+FEATURES
+----------------------------------------------------------------------
+  * Claim severity prediction (1-5 scale)
+  * Adjuster recommendation by expertise
+  * Reserve estimation
+  * Fraud risk scoring with Isolation Forest
+  * FastAPI REST API
+  * Feature importance explanations
+
+----------------------------------------------------------------------
+SAMPLE INPUT
+----------------------------------------------------------------------
+  Claim attributes
+
+  Example:
+    curl -X POST /score -d '{"lob": "PersonalAuto", "loss_amount": 15000}'
+
+----------------------------------------------------------------------
+SAMPLE OUTPUT
+----------------------------------------------------------------------
+  Claim intelligence scores
+
+  Example:
+    {"severity": 3, "fraud_score": 12, "adjuster": "Auto Specialist", "reserve": 18500}
+
+----------------------------------------------------------------------
+PROJECT STRUCTURE
+----------------------------------------------------------------------
+  LICENSE
+  project-idea.json
+  pyproject.toml
+  README.md
+  requirements.txt
+  setup.py
+  .github/workflows/test.yml
+  src/claim_intelligence/config.py
+  src/claim_intelligence/data_generator.py
+  src/claim_intelligence/explanations.py
+  src/claim_intelligence/feature_engineering.py
+  src/claim_intelligence/scoring.py
+  src/claim_intelligence/__init__.py
+  src/claim_intelligence/api/app.py
+  src/claim_intelligence/api/schemas.py
+  src/claim_intelligence/api/__init__.py
+  src/claim_intelligence/models/adjuster_recommender.py
+  src/claim_intelligence/models/fraud_model.py
+  src/claim_intelligence/models/reserve_model.py
+  src/claim_intelligence/models/severity_model.py
+  src/claim_intelligence/models/__init__.py
+  tests/conftest.py
+  tests/test_adjuster_recommender.py
+  tests/test_api.py
+  tests/test_data_generator.py
+  tests/test_explanations.py
+  tests/test_feature_engineering.py
+  tests/test_models.py
+  tests/test_scoring.py
+  tests/__init__.py
+
+----------------------------------------------------------------------
+TEST RESULTS
+----------------------------------------------------------------------
+  Status: PASSED
+  Tests Run: 61
+  Passed: 61
+  Failed: 0
+
+======================================================================
+  Author: Maharshi Soni  |  License: MIT
+======================================================================
