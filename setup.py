@@ -10,7 +10,7 @@ setup(
     description="ML-powered claim triage and fraud detection for P&C insurance",
     long_description=open("README.md", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/maharshisoni/guidewire-claim-intelligence",
+    url="https://github.com/sonimaharshi1999/guidewire-claim-intelligence",
     package_dir={"": "src"},
     packages=find_packages(where="src"),
     python_requires=">=3.9",

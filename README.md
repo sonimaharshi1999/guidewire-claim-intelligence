@@ -2,7 +2,7 @@
 
 **ML-Powered Claim Triage & Fraud Detection for P&C Insurance**
 
-[![Tests](https://github.com/maharshisoni/guidewire-claim-intelligence/actions/workflows/test.yml/badge.svg)](https://github.com/maharshisoni/guidewire-claim-intelligence/actions/workflows/test.yml)
+[![Tests](https://github.com/sonimaharshi1999/guidewire-claim-intelligence/actions/workflows/test.yml/badge.svg)](https://github.com/sonimaharshi1999/guidewire-claim-intelligence/actions/workflows/test.yml)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
@@ -97,7 +97,7 @@ graph TB
 
 ```bash
 # Clone the repository
-git clone https://github.com/maharshisoni/guidewire-claim-intelligence.git
+git clone https://github.com/sonimaharshi1999/guidewire-claim-intelligence.git
 cd guidewire-claim-intelligence
 
 # Install dependencies
